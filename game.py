@@ -17,7 +17,7 @@ def game():
             else:
                 print("Väärin meni!")
         # print tulos_määrä #lopullinen tulos
-        print(f"Vastasit oikein {tulos_määrä} kysymykseen {len(kysymykset)}")
+        print(f"Vastasit oikein {tulos_määrä} kysymykseen {len(kysymykset)}:sta kysymyksestä.")
         print(f"Hyvin pelattu {player_name}")
         game_on = False
 
