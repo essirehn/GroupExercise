@@ -8,7 +8,7 @@ def game():
     game_on = True
     tulos_määrä = 0
     while game_on:
-        for kysymys, vastaus in kysymykset:
+        for kysymys, vastaus in kysymykset.items():
             print(kysymys)
             pelaaja_vastaus = input("Vastauksesi (anna numero, esim 1): ")
             if pelaaja_vastaus == vastaus:
@@ -18,7 +18,7 @@ def game():
                 print("Väärin meni!")
         # print tulos_määrä #lopullinen tulos
         print(f"Vastasit oikein {tulos_määrä} kysymykseen {len(kysymykset)}")
-        print(f'"Hyvin pelattu {player_name}")
+        print(f"Hyvin pelattu {player_name}")
         game_on = False
 
 print("helou, welkom tu our geim.")
